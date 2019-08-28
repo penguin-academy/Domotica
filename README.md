@@ -8,7 +8,7 @@ To mount the project, follow these steps:
 
 1. Flask framework installation with pip, with the following command:
 ```
-pip3 install Flask (for python version 3)
+pip3 install Flask #(for python version 3)
 ```
 
 2. Download the code with this command:
