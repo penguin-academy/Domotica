@@ -1,6 +1,6 @@
 # Home Automation
 
-## Basic Home Automation Project with Flask and Raspberry Pi
+## Basic Home Automation Project with Flask and Raspberry Pi
 
 As a test, we connect LEDs with GPIO 23, 24, 25, 26, with resistances of 330 ohm in series to avoid burning them. The code can be optimized but this is just a basic example to mount a mini home automation server with a Raspberry Pi. You can control any type of more power-demanding devices such as light bulbs, fluorescent lights, etc.
 
