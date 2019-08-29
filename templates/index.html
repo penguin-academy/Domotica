@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-  <title>Domotica</title>
+  <title>Home Automation</title>
   
   <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/cerulean/bootstrap.min.css" rel="stylesheet" integrity="sha384-C++cugH8+Uf86JbNOnQoBweHHAe/wVKN/mb0lTybu/NZ9sEYbd+BbbYtNpWYAsNP" crossorigin="anonymous">
      
@@ -16,59 +16,59 @@
 
 <body style="text-align:center;">
 <h1> 
-    Controles de la casa 
+    House Controls 
 </h1>
 <div style="text-align:center;">
-<h1 id="Dormitorio"> Dormitorio:</h1>
+<h1 id="Bedroom"> Bedroom:</h1>
 <button >
-    <a href="/0" style="text-decoration:none;">Encender</a>
+    <a href="/0" style="text-decoration:none;">On</a>
     
 </button>
 <button>
-        <a href="/1" style="text-decoration:none;">Apagar</a>
+        <a href="/1" style="text-decoration:none;">Off</a>
         
     </button>
 <br>
-<h1 id="Sala"> Sala: </h1>
+<h1 id="LivingRoom"> LivingRoom: </h1>
 <button>
-    <a href="/2" style="text-decoration:none;">Encender</a>
+    <a href="/2" style="text-decoration:none;">On</a>
     
 </button>
 <button >
-        <a href="/3" style="text-decoration:none;">Apagar</a>
+        <a href="/3" style="text-decoration:none;">Off</a>
         
     </button>
     <br>
-    <h1 id="Cocina">Cocina: </h1>
+    <h1 id="Kitchen">Kitchen: </h1>
     <button >
-        <a href="/4" style="text-decoration:none;">Encender</a>
+        <a href="/4" style="text-decoration:none;">On</a>
         
     </button>
     <button >
-            <a href="/5" style="text-decoration:none;">Apagar</a>
+            <a href="/5" style="text-decoration:none;">Off</a>
             
         </button>
         <br>
         <h1 id="Patio"> Patio:</h1>
         <button >
-            <a href="/6" style="text-decoration:none;">Encender</a>
+            <a href="/6" style="text-decoration:none;">On</a>
             
         </button>
         <button>
-                <a href="/7" style="text-decoration:none;">Apagar</a>
+                <a href="/7" style="text-decoration:none;">Off</a>
                 
             </button>
 </div>
-<h1 id="resultado"></h1>
+<h1 id="result"></h1>
 
   <script>
       
-      //var msg='{{msg}}';                         //recibimos los datos desde flask 
+      //var msg='{{msg}}';                         //we get the date from Flask 
       var json=JSON.parse('{{msg|tojson|safe}}') ;
-       document.getElementById("Dormitorio").innerHTML="Dormitorio: "+json.dormitorio ;
-       document.getElementById("Sala").innerHTML="Sala: "+json.sala;
-       document.getElementById("Cocina").innerHTML="Cocina: "+json.cocina;
-       document.getElementById("Patio").innerHTML="Cocina: "+json.patio;
+       document.getElementById("Bedroom").innerHTML="bedroom: "+json.bedroom ;
+       document.getElementById("LivingRoom").innerHTML="LivingRoom: "+json.livingroom;
+       document.getElementById("Kitchen").innerHTML="Kitchen: "+json.kitchen;
+       document.getElementById("Patio").innerHTML="Patio: "+json.patio;
        
   </script>         
    <style type="text/css">
@@ -76,7 +76,6 @@
         font-size:20px;
         font-family:Verdana,Helvetica;
         font-weight:bold;
-
        
         border-radius:20px;
         width:140px;
