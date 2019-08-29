@@ -70,7 +70,7 @@ lights4=Lights("Patio",led4)
 
 
 
-@app.route('/<int:estado>')
+@app.route('/<int:status>')
 def index1(status):         #we get the status sent by the client
     
     if status==0:
